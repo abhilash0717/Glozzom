@@ -88,28 +88,111 @@
   <!-- About section ends here -->
 
   <!-- Icon boxes section starts here -->
-  
-  <!-- Icon boxes section ends here -->
-
-
-  <!-- Newsletter section starts here -->
-  <section id="newsletter" class="p-5 text-center bg-dark text-white">
+  <section id="icon-boxes">
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>Sign up for our newsletter</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ab esse tempora voluptates veniam,
-            explicabo debitis eveniet ex. Neque, tempora.</p>
-          <form class="form-inline justify-content-center">
-            <input type="text" class="mb-2 mr-2 form-control" placeholder="enter name">
-            <input type="email" class="mb-2 mr-2 form-control" placeholder="enter email">
-            <button class="btn btn-primary mb-2">Submit</button>
-          </form>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card bg-danger text-center text-white">
+            <div class="card-body">
+              <i class="fas fa-building fa-3x"></i>
+              <h3>Sample heading</h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-dark text-center text-white">
+            <div class="card-body">
+              <i class="fas fa-bullhorn fa-3x"></i>
+              <h3>Sample heading</h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-danger text-center text-white">
+            <div class="card-body">
+              <i class="fas fa-comments fa-3x"></i>
+              <h3>Sample heading</h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card bg-dark text-center text-white">
+            <div class="card-body">
+              <i class="fas fa-box fa-3x"></i>
+              <h3>Sample heading</h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-danger text-center text-white">
+            <div class="card-body">
+              <i class="fas fa-credit-card fa-3x"></i>
+              <h3>Sample heading</h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-dark text-center text-white">
+            <div class="card-body">
+              <i class="fas fa-coffee fa-3x"></i>
+              <h3>Sample heading</h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, non.
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Newsletter section ends here -->
+  <!-- Icon boxes section ends here -->
+
+  <!-- Testimonial section starts here -->
+  <section id="testimonials" class="bg-dark text-white p-4">
+    <div class="container">
+      <h2 class = "text-center">Testimonials</h2>
+      <div class="row text-center">
+        <div class="col">
+          <div class="slider">
+            <div>
+              <blockquote class = "blockquote">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, accusamus.
+                </p>
+                <footer class="blockqoute-footer">John Doe from </footer>
+                <cite class="comapany 1">company 1</cite>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class = "blockquote">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, accusamus.
+                </p>
+                <footer class="blockqoute-footer">Sam Smith from </footer>
+                <cite class="comapany 2">company 2</cite>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class = "blockquote">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, accusamus.
+                </p>
+                <footer class="blockqoute-footer">Meghan williams from </footer>
+                <cite class="comapany 3">company 3</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonial section ends here -->
+
 
   <!-- Footer section starts here -->
   <section id="main-footer" class="text-center p-5">
@@ -139,6 +222,13 @@
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+    //for testimonial slider to work using slick slider
+    $('.slider').slick({
+      infinite: true,
+      slideToShow : 1,
+      slideToScroll : 1
+    });
   </script>
 </body>
 
